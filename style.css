@@ -1,14 +1,95 @@
-/* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-.container {
-  max-width: 20rem;
-  margin-right: auto;
-  margin-left: auto;
+body {
+  background: #fff6a3;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 80px;
+  text-align: center;
+  color: #008D6D;
+  margin-bottom: 80px;
+}
+
+.main__video {
+  background: url(video.png);
+  width: 80vw;
+  height: 40vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.main__video--play {
+  height: 100px;
+  width: 100px;
+}
+
+.task-solution__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.task-solution__block {
+  width: 570px;
+  height: 720px;
+  padding: 50px;
+  margin: 10px;
+  background: #008D6D;
+  border-radius: 0 35px;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 28px;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.list__item {
+  padding: 20px;
+}
+
+.moodboard__container {
+  width: 80vw;
+  background: #37B5FF;
+  border-radius: 0 35px;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 28px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 150px;
+}
+
+.moodboard__img--kids {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.moodboard__img--map {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  width: 40%;
 }
