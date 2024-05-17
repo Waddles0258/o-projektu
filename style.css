@@ -14,7 +14,8 @@ html {
 }
 
 body {
-  background: #fff6a3;
+  background: url(map_background.svg);
+  background-attachment: fixed;
 }
 
 header {
